@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationContainer from './NavigationContainer'
+import HomeComponent from '../components/HomeComponent'
 
 export default class MainContainer extends React.Component {
 
@@ -16,7 +17,10 @@ export default class MainContainer extends React.Component {
 
 	render() {
 		return(
-			<NavigationContainer/>
+			<div className="container">
+				{this.state.page != 'home' && <NavigationContainer/>}
+				{this.state.page == 'home' && <HomeComponent/>}
+			</div>
 		);
 	}
 }
