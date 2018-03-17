@@ -7,12 +7,12 @@ export default class MainContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			page: 'home'
+			page: null
 		}
 	}
 
 	componentDidMount() {
-		console.log("main mounted");
+		this.setState({ page: 'home' })
 	}
 
 	toHome = (e) => {
@@ -31,9 +31,13 @@ export default class MainContainer extends React.Component {
 				<NavigationContainer page={this.state.page}
 									 toHome={this.toHome}	
 									 toAbout={this.toAbout}
-									 display={this.state.page !='home'?'flex':'none'}/>
-				{this.state.page == 'home' && <HomeComponent
-												toAbout={this.toAbout}/>}
+									 display={this.state.page =='about'?'flex': 
+									 		  this.state.page =='projects'?'flex':
+									 		  this.state.page =='blog'?'flex':
+									 		  'none'}/>
+				<HomeComponent page={this.state.page}
+							   toAbout={this.toAbout}
+							   display={this.state.page =='home'?'flex':'none'}/>
 			</div>
 		);
 	}

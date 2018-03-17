@@ -101,22 +101,23 @@ html, body {
 	width: 100%;
 }
 
-.nav-transition-enter {
+.transition-enter {
   	opacity: 0.01;
 }
 
-.nav-transition-enter.nav-transition-enter-active {
+.transition-enter.transition-enter-active {
   	opacity: 1;
-  	transition: 700ms;	
+  	transition: 200ms;	
 }
 
-.nav-transition-leave {
-  	opacity: 0;
+.transition-leave {
+	cursor: default;
+  	opacity: 1;
 }
 
-.nav-transition-leave.nav-transition-leave-active {
+.transition-leave.transition-leave-active {
   	opacity: 0.01;
-  	transition: 700ms;
+  	transition: 200ms;
 }
 
 .nav-bar {
@@ -127,7 +128,7 @@ html, body {
 	position: absolute;
 	height: 10%;
 	background-color: #E6EFF7;
-	box-shadow: 0px -1px 15px #D7B3C1;
+	box-shadow: 0px -1px 10px #D7B3C1;
 	display: flex;	
 	flex-direction: row;
 	justify-content: space-between;
