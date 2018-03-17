@@ -73,9 +73,6 @@ html, body {
 	color: #4F6170;	
 	font-family: Raleway;	
 	display: inline;
-}
-
-.home-nav a {
 	text-decoration: none;
 	padding: 0px 0px 2px 0px;
 	color: #4F6170;
@@ -84,14 +81,11 @@ html, body {
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s;
-	border-bottom: 1.25px solid transparent;	
+	border-bottom: 1.25px solid transparent;
 }
 
-.home-nav a:visited {
-	color: #4F6170;	
-}
-
-.home-nav li a:hover {
+.home-nav li:hover {
+	cursor: pointer;
 	border-bottom: 1.25px solid #4F6170;
 }
 
@@ -103,6 +97,72 @@ html, body {
 	left: 18%;
 }
 
+.nav-container {
+	width: 100%;
+}
+
+.nav-transition-enter {
+  	opacity: 0.01;
+}
+
+.nav-transition-enter.nav-transition-enter-active {
+  	opacity: 1;
+  	transition: 700ms;	
+}
+
+.nav-transition-leave {
+  	opacity: 0;
+}
+
+.nav-transition-leave.nav-transition-leave-active {
+  	opacity: 0.01;
+  	transition: 700ms;
+}
+
 .nav-bar {
+	color: #4F6170;	
+	font-family: Raleway;	
+	top: 0%;
+	width: 100%;
+	position: absolute;
+	height: 10%;
+	background-color: #E6EFF7;
+	box-shadow: 0px -1px 15px #D7B3C1;
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name {
+	display: flex;
+	margin-left: 2%;
+	font-size: 22px;	
+}
+
+.nav-items {
+	box-sizing: border-box;
+	margin-right: 2%;
+	display: flex;
+	width: 30%;	
+	justify-content: space-between;
+	right: 5%;
+}
+
+.nav-items li {
 	font-family: Raleway;
+	font-size: 22px;
+	display: inline;
+	text-decoration: none;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	border-bottom: 1.25px solid transparent;	
+}
+
+.nav-items li:hover {
+	cursor: pointer;
+	border-bottom: 1.25px solid #4F6170;
 }

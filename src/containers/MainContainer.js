@@ -15,11 +15,25 @@ export default class MainContainer extends React.Component {
 		console.log("main mounted");
 	}
 
+	toHome = (e) => {
+		console.log("HOME");
+		this.setState({ page: 'home' });
+	}
+
+	toAbout = (e) => {
+		console.log("ABOUT");	
+		this.setState({ page: 'about' });
+	}
+
 	render() {
 		return(
 			<div className="container">
-				{this.state.page != 'home' && <NavigationContainer/>}
-				{this.state.page == 'home' && <HomeComponent/>}
+				<NavigationContainer page={this.state.page}
+									 toHome={this.toHome}	
+									 toAbout={this.toAbout}
+									 display={this.state.page !='home'?'flex':'none'}/>
+				{this.state.page == 'home' && <HomeComponent
+												toAbout={this.toAbout}/>}
 			</div>
 		);
 	}
