@@ -22,8 +22,8 @@ export default class HomeComponent extends React.Component {
 						</div>
 						<ul className="home-nav">
 			 				<li onClick={this.props.toAbout}>ABOUT</li>
-			 				<li>PROJECTS</li>
-			 				<li>BLOG</li>
+			 				<li onClick={this.props.toProjects}>PROJECTS</li>
+			 				<li onClick={this.props.toBlog}>BLOG</li>
 						</ul>
 						<img className="jelly" src="jelly.png"/>
 					</div>

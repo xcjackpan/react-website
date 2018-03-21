@@ -25,18 +25,28 @@ export default class MainContainer extends React.Component {
 		this.setState({ page: 'about' });
 	}
 
+	toProjects = (e) => {
+		console.log("PROJECTS");
+		this.setState({ page: 'projects' });
+	}
+
+	toBlog = (e) => {
+		console.log("BLOG");
+		this.setState({ page: 'blog' });
+	}
+
 	render() {
 		return(
 			<div className="container">
-				<NavigationContainer page={this.state.page}
-									 toHome={this.toHome}	
+				<NavigationContainer toHome={this.toHome}	
 									 toAbout={this.toAbout}
-									 display={this.state.page =='about'?'flex': 
-									 		  this.state.page =='projects'?'flex':
-									 		  this.state.page =='blog'?'flex':
-									 		  'none'}/>
+									 toProjects={this.toProjects}
+									 toBlog={this.toBlog}
+									 display={(this.state.page =='about' || this.state.page =='projects' || this.state.page =='blog')?'flex':'none'}/>
 				<HomeComponent page={this.state.page}
 							   toAbout={this.toAbout}
+							   toProjects={this.toProjects}
+							   toBlog={this.toBlog}   
 							   display={this.state.page =='home'?'flex':'none'}/>
 			</div>
 		);
