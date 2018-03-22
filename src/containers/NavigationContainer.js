@@ -5,9 +5,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
  	constructor(props) {
  		super(props);
- 		this.state = {
- 			page: this.props.page
- 		}
  	}
 
  	render() {
@@ -18,7 +15,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 	 			 						  transitionAppearTimeOut={200}
 	 									  transitionEnterTimeout={200}
 	 									  transitionLeaveTimeout={200}>
-		 			<div key="nav-bar" className="nav-bar" style={{display:this.props.display}}>
+		 			<div key={this.props.show} className="nav-bar" style={{display:this.props.display}}>
 			 			<div className="name">
 				 			<p>JACK PAN</p>
 				 		</div>
