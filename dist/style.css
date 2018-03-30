@@ -120,6 +120,37 @@ html, body {
   	transition: 200ms;
 }
 
+.about {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.bio {
+	color: #4F6170;
+	font-family: Raleway;
+	font-size: 26px;
+	width: 33%;
+	top: 20%;
+	align-items: left;
+	line-height: 1.3;
+	margin-left: 12%;
+}
+
+.bio br {
+	line-height: 1.3;
+}
+
+.head {
+	border-radius: 50%;
+	width: 25%;
+	height: auto;
+	position: absolute;
+	align-content: center;
+	right: 18%;
+	box-shadow: 0px 2px 6px #D7B3C1;
+}
+
 .nav-bar {
 	color: #4F6170;	
 	font-family: Raleway;	

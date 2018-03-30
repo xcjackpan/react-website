@@ -16,7 +16,7 @@ export default class HomeComponent extends React.Component {
  			 						  	 transitionAppearTimeOut={200}
  									  	 transitionEnterTimeout={200}
  									  	 transitionLeaveTimeout={200}>
-					<div key={this.props.page} className="titleContainer" style={{display:this.props.display}}>
+					<div className="titleContainer" key={this.props.page} style={{display:this.props.display}}>
 						<div className="banner">
 							<h1>JACK PAN</h1>
 						</div>
