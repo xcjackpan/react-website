@@ -10,11 +10,11 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
  	render() {
  		return(
  			<div style={{width: '100%'}}>
-	 			 <ReactCSSTransitionGroup transitionName="transition"
+	 			 <ReactCSSTransitionGroup transitionName="nav-transition"
 	 			 						  transitionAppear={true}
-	 			 						  transitionAppearTimeOut={200}
-	 									  transitionEnterTimeout={200}
-	 									  transitionLeaveTimeout={200}>
+	 			 						  transitionAppearTimeOut={350}
+	 									  transitionEnterTimeout={350}
+	 									  transitionLeaveTimeout={350}>
 		 			<div key={this.props.show} className="nav-bar" style={{display:this.props.display}}>
 			 			<div className="name">
 				 			<p>JACK PAN</p>

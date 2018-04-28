@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationContainer from './NavigationContainer'
 import HomeComponent from '../components/HomeComponent'
 import AboutComponent from '../components/AboutComponent'
+import ProjectBoardComponent from '../components/ProjectBoardComponent'
 
 export default class MainContainer extends React.Component {
 
@@ -23,21 +24,27 @@ export default class MainContainer extends React.Component {
 	}
 
 	toAbout = (e) => {
-		this.setState({ page: 'change' });		
-		console.log("ABOUT");	
-		setTimeout(function() { this.setState({ page: 'about' }); }.bind(this), 220);		
+		if (this.state.page != 'about') {
+			this.setState({ page: 'change' });
+			console.log("ABOUT");	
+			setTimeout(function() { this.setState({ page: 'about' }); }.bind(this), 220);
+		}
 	}
 
 	toProjects = (e) => {
-		this.setState({ page: 'change' });		
-		console.log("PROJECTS");
-		setTimeout(function() { this.setState({ page: 'projects' }); }.bind(this), 220);	
+		if (this.state.page != 'projects') {
+			this.setState({ page: 'change' });		
+			console.log("PROJECTS");
+			setTimeout(function() { this.setState({ page: 'projects' }); }.bind(this), 220);
+		}
 	}
 
 	toBlog = (e) => {
-		this.setState({ page: 'change' });		
-		console.log("BLOG");
-		setTimeout(function() { this.setState({ page: 'blog' }); }.bind(this), 220);
+		if (this.state.page != 'blog') {
+			this.setState({ page: 'change' });		
+			console.log("BLOG");
+			setTimeout(function() { this.setState({ page: 'blog' }); }.bind(this), 220);
+		}
 	}
 
 	render() {
@@ -57,6 +64,8 @@ export default class MainContainer extends React.Component {
 							   display={this.state.page =='home'?'flex':'none'}/>
 				<AboutComponent page={this.state.page} 
 								display={this.state.page =='about'?'flex':'none'}/>
+				<ProjectBoardComponent page={this.state.page}
+									   display={this.state.page =='projects'?'flex':'none'}/>
 			</div>
 		);
 	}

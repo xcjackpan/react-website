@@ -7,6 +7,9 @@
 	src: url('../fonts/Raleway-Light.ttf');
 }
 
+/*Consider white background*/
+/*blue-background: E6EFF7*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,7 +21,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;	
-	background-color: #E6EFF7;
+	background-color: #FFF;
 }
 
 .titleContainer {
@@ -89,6 +92,7 @@ html, body {
 	border-bottom: 1.25px solid #4F6170;
 }
 
+/*
 .jelly {
 	width: 18%;
 	height: auto;
@@ -96,6 +100,7 @@ html, body {
 	top: 20%;
 	left: 18%;
 }
+*/
 
 .nav-container {
 	width: 100%;
@@ -120,35 +125,22 @@ html, body {
   	transition: 200ms;
 }
 
-.about {
-	display: flex;
-	align-items: center;
-	width: 100%;
+.nav-transition-enter {
+	transform: translate(0, -100%);
 }
 
-.bio {
-	color: #4F6170;
-	font-family: Raleway;
-	font-size: 26px;
-	width: 33%;
-	top: 20%;
-	align-items: left;
-	line-height: 1.3;
-	margin-left: 12%;
+.nav-transition-enter.nav-transition-enter-active {
+	transform: translate(0%);
+	transition: transform 350ms ease-in-out;
 }
 
-.bio br {
-	line-height: 1.3;
+.nav-transition-leave {
+	transform: translate(0%);
 }
 
-.head {
-	border-radius: 50%;
-	width: 25%;
-	height: auto;
-	position: absolute;
-	align-content: center;
-	right: 18%;
-	box-shadow: 0px 2px 6px #D7B3C1;
+.nav-transition-leave.nav-transition-leave-active {
+	transform: translate(0, -100%);
+	transition: transform 350ms ease-in-out;
 }
 
 .nav-bar {
@@ -158,7 +150,7 @@ html, body {
 	width: 100%;
 	position: absolute;
 	height: 10%;
-	background-color: #E6EFF7;
+	background-color: #FFF;
 	box-shadow: 0px -1px 10px #D7B3C1;
 	display: flex;	
 	flex-direction: row;
@@ -197,4 +189,146 @@ html, body {
 .nav-items li:hover {
 	cursor: pointer;
 	border-bottom: 1.25px solid #4F6170;
+}
+
+.about {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.bio {
+	color: #4F6170;
+	font-family: Raleway;
+	font-size: 26px;
+	width: 33%;
+	top: 20%;
+	align-items: left;
+	line-height: 1.3;
+	margin-left: 15%;
+}
+
+.bio br {
+	line-height: 1.3;
+}
+
+.resume-button {
+	text-align: center;
+	display: flex-wrap;
+	width: 30%;
+	line-height: 2.3;
+	border: 1px solid #4F6170;
+	color: #4F6170;
+	font-family: Raleway;
+	font-size: 24px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.resume-button p {
+	margin: auto;
+}
+
+.resume-button a {
+	text-decoration: none;
+	color: #4F6170;
+}
+
+.resume-button:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #D7B3C1;
+}
+
+.head {
+	border-radius: 50%;
+	width: 25%;
+	height: auto;
+	position: absolute;
+	align-content: center;
+	right: 18%;
+	box-shadow: 0px 2px 6px #D7B3C1;
+}
+
+.projects {
+	margin-left: 5%;
+	text-align: center;
+	color: #4F6170;
+	font-family: Raleway;
+	font-size: 24px;
+	width: 90%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.projects h2 {
+	line-height: 2.0;
+	padding-top: 4.5%;
+	padding-bottom: 1%;
+}
+
+.projects-row {
+	padding-top: 2.0%;
+	padding-bottom: 1.5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.project-square {
+	padding: 0 30px 0 30px;
+}
+
+.project-hover {
+	position: relative;
+	width: 100%;
+}
+
+.project-preview {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s ease;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project-hover:hover {
+	cursor: pointer;
+}
+
+.project-hover:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.project-description {
+	margin-top: 4%;
 }
