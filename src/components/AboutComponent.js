@@ -19,11 +19,11 @@ export default class AboutComponent extends React.Component {
 						<div className="bio">
 							<h1>Hi there.</h1>
 							<br/>
-							<p>I'm currently a first-year student at the University of Waterloo studying computer science. Here 
+							<p>I'm a first-year student at the University of Waterloo studying computer science. Here 
 							you'll find my professional resume, my portfolio, and a personal blog.<br/> <br/>Feel free to take a look around!</p>
 							<br/>
 							<div className="resume-button">
-								<a href="resume.pdf">
+								<a href="resume.pdf" target="_blank">
 									<p>RESUME</p>
 								</a>
 							</div>

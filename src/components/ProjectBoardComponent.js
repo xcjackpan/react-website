@@ -41,8 +41,9 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  image = "kevin.png"
 	 										  description = "Javascript"
 	 										  link = "https://github.com/xcjackpan/WhenKevinPresident"/>
-	 						<ProjectComponent projectname = "  "
-	 										  image = "visualiser.png"/>
+	 						<ProjectComponent projectname = "Coming soon!"
+	 										  image = "tbd.png"
+	 										  description = "Who knows what the future holds?"/>
 	 					</div>
 					</div>
 				</ReactCSSTransitionGroup>

@@ -3,6 +3,7 @@ import NavigationContainer from './NavigationContainer'
 import HomeComponent from '../components/HomeComponent'
 import AboutComponent from '../components/AboutComponent'
 import ProjectBoardComponent from '../components/ProjectBoardComponent'
+import BlogContainer from '../containers/BlogContainer'
 
 export default class MainContainer extends React.Component {
 
@@ -66,6 +67,8 @@ export default class MainContainer extends React.Component {
 								display={this.state.page =='about'?'flex':'none'}/>
 				<ProjectBoardComponent page={this.state.page}
 									   display={this.state.page =='projects'?'flex':'none'}/>
+				<BlogContainer page={this.state.page}
+							   display={this.state.page == 'blog'?'flex':'none'}/>
 			</div>
 		);
 	}

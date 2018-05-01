@@ -266,13 +266,13 @@ html, body {
 
 .projects h2 {
 	line-height: 2.0;
-	padding-top: 4.5%;
+	padding-top: 5.5%;
 	padding-bottom: 1%;
 }
 
 .projects-row {
 	padding-top: 2.0%;
-	padding-bottom: 1.5%;
+	padding-bottom: 2.0%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -307,7 +307,7 @@ html, body {
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s ease;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .project-hover:hover {
@@ -331,4 +331,45 @@ html, body {
 
 .project-description {
 	margin-top: 4%;
+}
+
+.blog {
+	display: flex;
+	margin-top: 4%;
+	flex-direction: row;
+	font-family: Raleway;
+	font-size: 22px;
+	color: #4F6170;
+	width: 72%;
+	margin-left: 14%;
+}
+
+.previews {
+	height: 80%;
+}
+
+.post-preview {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.button {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-left: 6%;
+	margin-right: 6%;
+	font-size: 80px;
+}
+
+.button i:hover {
+	cursor: pointer;
+	color: #D7B3C1;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s ease;
 }
