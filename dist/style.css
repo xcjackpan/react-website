@@ -349,8 +349,33 @@ html, body {
 }
 
 .post-preview {
-	padding-top: 2%;
-	padding-bottom: 2%;
+	clear: both;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.readmore {
+	float: left;
+	line-height: 1.5;
+	border-bottom: 1px solid #4F6170;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.readmore:hover {
+	cursor: pointer;
+	background-color: #D7B3C1;
+}
+
+.readmore a {
+	text-decoration: none;
+}
+
+.readmore a:visited {
+	color: #4F6170;
 }
 
 .button {
@@ -364,12 +389,15 @@ html, body {
 	font-size: 80px;
 }
 
-.button i:hover {
-	cursor: pointer;
-	color: #D7B3C1;
+.button i {
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s ease;
+}
+
+.button i:hover {
+	cursor: pointer;
+	color: #D7B3C1;
 }

@@ -42,7 +42,7 @@ export default class MainContainer extends React.Component {
 
 	toBlog = (e) => {
 		if (this.state.page != 'blog') {
-			this.setState({ page: 'change' });		
+			this.setState({ page: 'change' });
 			console.log("BLOG");
 			setTimeout(function() { this.setState({ page: 'blog' }); }.bind(this), 220);
 		}
