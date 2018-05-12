@@ -27,7 +27,7 @@ export default class AboutComponent extends React.Component {
 									<p>RESUME</p>
 								</a>
 							</div>
-							<p class="icons"><a href="https://github.com/xcjackpan" target="_blank"><i class="fab fa-github"></i></a>
+							<p className="icons"><a href="https://github.com/xcjackpan" target="_blank"><i class="fab fa-github"></i></a>
 											 <a href="https://www.linkedin.com/in/xcjackpan/" target="_blank"><i class="fab fa-linkedin"></i></a>
 											 <a href="mailto:xj2pan@uwaterloo.ca" target="_top"><i class="fas fa-envelope"></i></a></p>
 						</div>

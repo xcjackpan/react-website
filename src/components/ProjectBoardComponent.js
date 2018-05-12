@@ -10,7 +10,7 @@ export default class ProjectBoardComponent extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="wrapper">
 				<ReactCSSTransitionGroup transitionName="transition"
  			 							 transitionAppear={true}
  			 						  	 transitionAppearTimeOut={200}
@@ -19,29 +19,35 @@ export default class ProjectBoardComponent extends React.Component {
  					<div className="projects" key={this.props.page} style={{ display:this.props.display }}>
  						<h2>Here's a look at what I've done!</h2>
 	 					<div className="projects-row">
-	 						<ProjectComponent projectname = "Chroma"
+	 						<ProjectComponent className ="square"
+	 										  projectname = "Chroma"
 	 										  image = "chroma.png"
 	 										  description = "Android Studio, Java, XML"
 	 										  link = "https://github.com/xcjackpan/Chroma"/>
-	 						<ProjectComponent projectname = "Puppr"
+	 						<ProjectComponent className ="square"
+	 										  projectname = "Puppr"
 	 										  image = "puppr.png"
 	 										  description = "React, Clarifai API, Javascript"
 	 										  link = "https://github.com/xcjackpan/puppr"/>
-	 						<ProjectComponent projectname = "reSTARant"
+	 						<ProjectComponent  className ="square"
+	 										  projectname = "reSTARant"
 	 										  image = "restarant.png"
 	 										  description = "React Native, Google OCR API"
 	 										  link = "https://github.com/xcjackpan/restARant"/>
 	 					</div>
 	 					<div className="projects-row">
-	 						<ProjectComponent projectname = "Audio Visualiser"
+	 						<ProjectComponent className ="square"
+	 										  projectname = "Audio Visualiser"
 	 										  image = "visualiser.png"
 	 										  description = "Javascript"
 	 										  link = "https://github.com/xcjackpan/AudioAnalyzer"/>
-	 						<ProjectComponent projectname = "When Kevin President"
+	 						<ProjectComponent className ="square"
+	 										  projectname = "When Kevin President"
 	 										  image = "kevin.png"
 	 										  description = "Javascript"
 	 										  link = "https://github.com/xcjackpan/WhenKevinPresident"/>
-	 						<ProjectComponent projectname = "Coming soon!"
+	 						<ProjectComponent className ="square"
+	 										  projectname = "Coming soon!"
 	 										  image = "tbd.png"
 	 										  description = "Who knows what the future holds?"/>
 	 					</div>

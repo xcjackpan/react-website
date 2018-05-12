@@ -25,7 +25,7 @@ export default class HomeComponent extends React.Component {
 			 				<li onClick={this.props.toProjects}>PROJECTS</li>
 			 				<li onClick={this.props.toBlog}>BLOG</li>
 						</ul>
-						<img className="jelly" src="jelly.png" style={{width: '18%', height: 'auto', position: 'absolute', top: '20%', left: '18%'}}/>
+						<img className="jelly" src="jelly.png"/>
 					</div>
 				</ReactCSSTransitionGroup>
 			</div>
