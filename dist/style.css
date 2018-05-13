@@ -533,14 +533,14 @@ html, body {
 	}
 
 	.blog {
-		font-size: 20px;
+		font-size: 19px;
 		width: 76%;
 		margin-left: 12%;
 	}
 
 	.post-preview {
-		padding-top: 3%;
-		padding-bottom: 3%;
+		padding-top: 2%;
+		padding-bottom: 2%;
 	}
 
 	.readmore {
@@ -617,14 +617,9 @@ html, body {
 
 	.blog {
 		margin-top: 4%;
-		font-size: 20px;
+		font-size: 19px;
 		width: 80%;
 		margin-left: 10%;
-	}
-
-	.post-preview {
-		padding-top: 3%;
-		padding-bottom: 3%;
 	}
 
 	.date {
@@ -764,7 +759,7 @@ html, body {
 	}
 
 	.blog {
-		font-size: 20px;
+		font-size: 19px;
 		width: 86%;
 		margin-left: 7%;
 	}
