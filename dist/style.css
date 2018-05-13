@@ -166,6 +166,7 @@ html, body {
 
 .nav-bar {
 	color: #4F6170;	
+	z-index: 9999;
 	font-family: Raleway;	
 	top: 0%;
 	width: 100%;
