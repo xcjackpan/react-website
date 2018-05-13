@@ -396,6 +396,9 @@ html, body {
 
 .previews {
 	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .post-preview {
@@ -746,6 +749,20 @@ html, body {
 		right: 8%;
 	}
 
+	.projects {
+		font-size: 21px;
+		width: 50%;
+		margin-left: 20%;
+		left: -4.5%;
+		top: 15%;
+	}
+
+	.project-square {
+		width: 120%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+
 	.blog {
 		font-size: 20px;
 		width: 86%;
@@ -796,6 +813,20 @@ html, body {
 		border-radius: 50%;
 		width: 40%;
 		right: 5%;
+	}
+
+	.projects {
+		font-size: 21px;
+		width: 50%;
+		margin-left: 20%;
+		left: -5%;
+		top: 15%;
+	}
+
+	.project-square {
+		width: 120%;
+		padding-bottom: 5%;
+		padding-top: 5%;
 	}
 
 	.blog {
@@ -1028,6 +1059,14 @@ html, body {
 		width: 45%;
 	}
 
+	.projects {
+		font-size: 21px;
+		width: 50%;
+		margin-left: 20%;
+		left: -5.5%;
+		top: 15%;
+	}
+
 	.post-preview h2 {
 		font-size: 22px;
 	}
@@ -1100,6 +1139,20 @@ html, body {
 
 @media only screen and (max-width : 450px) {
 
+	.projects {
+		font-size: 21px;
+		width: 50%;
+		margin-left: 20%;
+		left: -6.5%;
+		top: 15%;
+	}
+
+	.project-square {
+		width: 120%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+
 	.blog {
 		margin-top: 10%;
 		padding-top: 5%;
@@ -1109,7 +1162,7 @@ html, body {
 	}
 
 	.post-preview h2 {
-		font-size: 20px;
+		font-size: 19px;
 	}
 
 	.post-preview {
@@ -1178,10 +1231,24 @@ html, body {
 		width: 60%;
 	}
 
+	.projects {
+		font-size: 21px;
+		width: 50%;
+		margin-left: 20%;
+		left: -8.5%;
+		top: 15%;
+	}
+
+	.project-square {
+		width: 120%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+
 }
 
 
-@media only screen and (max-width : 375px) {
+@media only screen and (max-width : 380px) {
 
 	.banner h1 {
 		font-size: 65px;
@@ -1237,6 +1304,28 @@ html, body {
 		margin-bottom: 8%;
 		border-radius: 50%;
 		width: 65%;
+	}
+
+	.blog {
+		margin-top: 10%;
+		padding-top: 4%;
+		font-size: 16px;
+		width: 94%;
+		margin-left: 3%;
+	}
+
+	.post-preview h2 {
+		font-size: 18px;
+	}
+
+	.post-preview {
+		font-size: 12px;
+	}
+
+	.button {
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 50px;
 	}
 
 }
@@ -1297,6 +1386,28 @@ html, body {
 		margin-bottom: 6%;
 		border-radius: 50%;
 		width: 55%;
+	}
+
+	.blog {
+		margin-top: 10%;
+		padding-top: 5%;
+		font-size: 16px;
+		width: 94%;
+		margin-left: 3%;
+	}
+
+	.post-preview h2 {
+		font-size: 17px;
+	}
+
+	.post-preview {
+		font-size: 12px;
+	}
+
+	.button {
+		margin-left: 2%;
+		margin-right: 2%;
+		font-size: 50px;
 	}
 
 }
