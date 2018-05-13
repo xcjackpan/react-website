@@ -166,8 +166,7 @@ html, body {
 
 .nav-bar {
 	color: #4F6170;	
-	z-index: 9999;
-	font-family: Raleway;	
+	font-family: Raleway;
 	top: 0%;
 	width: 100%;
 	position: absolute;
@@ -214,7 +213,6 @@ html, body {
 }
 
 .about {
-	position: relative;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -297,6 +295,7 @@ html, body {
 }
 
 .head {
+	z-index: -999;
 	border-radius: 50%;
 	width: 25%;
 	height: auto;
