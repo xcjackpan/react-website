@@ -31,7 +31,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  link = "https://github.com/xcjackpan/puppr"/>
 	 						<ProjectComponent  className ="square"
 	 										  projectname = "reSTARant"
-	 										  image = "restarant.PNG"
+	 										  image = "restarant.png"
 	 										  description = "React Native, Google OCR API"
 	 										  link = "https://github.com/xcjackpan/restARant"/>
 	 					</div>

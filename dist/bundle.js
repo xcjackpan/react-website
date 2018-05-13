@@ -20919,7 +20919,7 @@ var ProjectBoardComponent = function (_React$Component) {
 								link: 'https://github.com/xcjackpan/puppr' }),
 							_react2.default.createElement(_ProjectComponent2.default, { className: 'square',
 								projectname: 'reSTARant',
-								image: 'restarant.PNG',
+								image: 'restarant.png',
 								description: 'React Native, Google OCR API',
 								link: 'https://github.com/xcjackpan/restARant' })
 						),
