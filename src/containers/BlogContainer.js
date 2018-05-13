@@ -36,7 +36,7 @@ export default class BlogContainer extends React.Component {
 							  "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...",
 							  "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...",
 							  "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec..."];
-		const linkArray = ["posts/chroma.html", "posts/website.html", "posts/speaking.html", "#", "#", "#"];
+		const linkArray = ["dist/posts/chroma.html", "dist/posts/website.html", "dist/posts/speaking.html", "#", "#", "#"];
 		// make sure you have the same amount of charactrs
 
 		return (
