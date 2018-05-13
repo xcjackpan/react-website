@@ -20815,17 +20815,17 @@ var AboutComponent = function (_React$Component) {
 								_react2.default.createElement(
 									'a',
 									{ href: 'https://github.com/xcjackpan', target: '_blank' },
-									_react2.default.createElement('i', { className: 'fab fa-github' })
+									_react2.default.createElement('i', { 'class': 'fab fa-github' })
 								),
 								_react2.default.createElement(
 									'a',
 									{ href: 'https://www.linkedin.com/in/xcjackpan/', target: '_blank' },
-									_react2.default.createElement('i', { className: 'fab fa-linkedin' })
+									_react2.default.createElement('i', { 'class': 'fab fa-linkedin' })
 								),
 								_react2.default.createElement(
 									'a',
 									{ href: 'mailto:xj2pan@uwaterloo.ca', target: '_top' },
-									_react2.default.createElement('i', { className: 'fas fa-envelope' })
+									_react2.default.createElement('i', { 'class': 'fas fa-envelope' })
 								)
 							)
 						),
