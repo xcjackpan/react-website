@@ -1,10 +1,10 @@
 @font-face {
 	font-family: Raleway_Regular;
-	src: url('../fonts/Raleway-Regular.ttf');
+	src: url('fonts/Raleway-Regular.ttf');
 }
 @font-face {
 	font-family: Raleway_Light;
-	src: url('../fonts/Raleway-Light.ttf');
+	src: url('fonts/Raleway-Light.ttf');
 }
 
 /*Consider white background*/
