@@ -91,8 +91,12 @@ html, body {
 }
 
 .container {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
 	align-items:center;
@@ -213,6 +217,15 @@ html, body {
 	border-bottom: 1.25px solid #4F6170;
 }
 
+.about-div {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -58%);
+}
+
 .about {
 	position: relative;
 	display: flex;
@@ -306,13 +319,23 @@ html, body {
 	box-shadow: 0px 2px 6px #D7B3C1;
 }
 
+.project-div {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -58%);
+}
+
 .projects {
-	margin-left: 5%;
 	text-align: center;
 	color: #4F6170;
 	font-family: Raleway;
 	font-size: 24px;
-	width: 90%;
+	width: 76vw;
+	margin-left: 12vw;
+	margin-right: 12vw;
 	flex-direction: column;
 }
 
@@ -326,7 +349,6 @@ html, body {
 	padding-top: 2.0%;
 	padding-bottom: 2.0%;
 	display: flex;
-	width: 100%;
 }
 
 .project-square {
@@ -385,6 +407,15 @@ html, body {
 	margin-top: 4%;
 }
 
+.blog-div {
+	width: 100%;
+	height: 86%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -54%);
+}
+
 .blog {
 	display: flex;
 	margin-top: 4%;
@@ -397,7 +428,7 @@ html, body {
 }
 
 .previews {
-	height: 80%;
+	max-height: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

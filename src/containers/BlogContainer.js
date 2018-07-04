@@ -40,34 +40,34 @@ export default class BlogContainer extends React.Component {
 		// make sure you have the same amount of charactrs
 
 		return (
-			<div>
-				<ReactCSSTransitionGroup transitionName="transition"
- 			 							 transitionAppear={true}
- 			 						  	 transitionAppearTimeOut={200}
- 									  	 transitionEnterTimeout={200}
- 									  	 transitionLeaveTimeout={200}>
- 					<div className="blog" key={this.props.page} style={{ display:this.props.display }}>
- 						<div className="button"><i style={{ color:this.state.currentpage == 0?'#FFFFFF':null, visibility: (this.state.currentpage == 0)?'hidden':'visible' }} 
- 												   className="fas fa-caret-left" onClick={this.prevPage}></i></div>
- 						<div className="previews">
-							<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage + 2]}
-												  date={dateArray[this.maxPage - this.state.currentpage + 2]}
-												  previewtext={previewArray[this.maxPage - this.state.currentpage + 2]}
-												  link={linkArray[this.maxPage - this.state.currentpage + 2]}/>
-							<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage + 1]}
-												  date={dateArray[this.maxPage - this.state.currentpage + 1]}
-												  previewtext={previewArray[this.maxPage - this.state.currentpage + 1]}
-												  link={linkArray[this.maxPage - this.state.currentpage + 1]}/>
-							<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage]}
-												  date={dateArray[this.maxPage - this.state.currentpage]}
-												  previewtext={previewArray[this.maxPage - this.state.currentpage]}
-												  link={linkArray[this.maxPage - this.state.currentpage]}/>
+			<ReactCSSTransitionGroup transitionName="transition"
+			 							 transitionAppear={true}
+			 						  	 transitionAppearTimeOut={200}
+									  	 transitionEnterTimeout={200}
+									  	 transitionLeaveTimeout={200}>
+				<div className="blog-div" key={this.props.page} style={{ display:this.props.display }}>
+	 					<div className="blog">
+	 						<div className="button"><i style={{ color:this.state.currentpage == 0?'#FFFFFF':null, visibility: (this.state.currentpage == 0)?'hidden':'visible' }} 
+	 												   className="fas fa-caret-left" onClick={this.prevPage}></i></div>
+	 						<div className="previews">
+								<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage + 2]}
+													  date={dateArray[this.maxPage - this.state.currentpage + 2]}
+													  previewtext={previewArray[this.maxPage - this.state.currentpage + 2]}
+													  link={linkArray[this.maxPage - this.state.currentpage + 2]}/>
+								<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage + 1]}
+													  date={dateArray[this.maxPage - this.state.currentpage + 1]}
+													  previewtext={previewArray[this.maxPage - this.state.currentpage + 1]}
+													  link={linkArray[this.maxPage - this.state.currentpage + 1]}/>
+								<PostPreviewComponent title={titleArray[this.maxPage - this.state.currentpage]}
+													  date={dateArray[this.maxPage - this.state.currentpage]}
+													  previewtext={previewArray[this.maxPage - this.state.currentpage]}
+													  link={linkArray[this.maxPage - this.state.currentpage]}/>
+							</div>
+							<div className="button"><i style={{ color:this.state.currentpage == this.maxPage?'#FFFFFF':null, visibility:this.state.currentpage == this.maxPage?'hidden':'visible' }} 
+								 					   className="fas fa-caret-right" onClick={this.nextPage}></i></div>
 						</div>
-						<div className="button"><i style={{ color:this.state.currentpage == this.maxPage?'#FFFFFF':null, visibility:this.state.currentpage == this.maxPage?'hidden':'visible' }} 
-							 					   className="fas fa-caret-right" onClick={this.nextPage}></i></div>
-					</div>
-				</ReactCSSTransitionGroup>
-			</div>
+				</div>
+			</ReactCSSTransitionGroup>
 		);
 	}
 

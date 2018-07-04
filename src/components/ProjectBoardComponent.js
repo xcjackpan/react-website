@@ -10,13 +10,13 @@ export default class ProjectBoardComponent extends React.Component {
 
 	render() {
 		return (
-			<div className="wrapper">
-				<ReactCSSTransitionGroup transitionName="transition"
- 			 							 transitionAppear={true}
- 			 						  	 transitionAppearTimeOut={200}
- 									  	 transitionEnterTimeout={200}
- 									  	 transitionLeaveTimeout={200}>
- 					<div className="projects" key={this.props.page} style={{ display:this.props.display }}>
+		<ReactCSSTransitionGroup transitionName="transition"
+	 							 transitionAppear={true}
+	 						  	 transitionAppearTimeOut={200}
+							  	 transitionEnterTimeout={200}
+							  	 transitionLeaveTimeout={200}>
+			<div className="project-div" key={this.props.page} style={{ display:this.props.display }}>
+ 					<div className="projects">
  						<h2>Here's a look at what I've done!</h2>
 	 					<div className="projects-row">
 	 						<ProjectComponent className ="square"
@@ -52,8 +52,8 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  description = "Who knows what the future holds?"/>
 	 					</div>
 					</div>
-				</ReactCSSTransitionGroup>
 			</div>
+		</ReactCSSTransitionGroup>
 		);
 	}
 }
