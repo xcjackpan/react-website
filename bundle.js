@@ -20765,18 +20765,18 @@ var AboutComponent = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
-				null,
+				_reactAddonsCssTransitionGroup2.default,
+				{ transitionName: 'transition',
+					transitionAppear: true,
+					transitionAppearTimeOut: 200,
+					transitionEnterTimeout: 200,
+					transitionLeaveTimeout: 200 },
 				_react2.default.createElement(
-					_reactAddonsCssTransitionGroup2.default,
-					{ transitionName: 'transition',
-						transitionAppear: true,
-						transitionAppearTimeOut: 200,
-						transitionEnterTimeout: 200,
-						transitionLeaveTimeout: 200 },
+					'div',
+					{ className: 'about-div', key: this.props.page, style: { display: this.props.display } },
 					_react2.default.createElement(
 						'div',
-						{ className: 'about', key: this.props.page, style: { display: this.props.display } },
+						{ className: 'about' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'bio' },
@@ -20815,17 +20815,17 @@ var AboutComponent = function (_React$Component) {
 								_react2.default.createElement(
 									'a',
 									{ href: 'https://github.com/xcjackpan', target: '_blank' },
-									_react2.default.createElement('i', { 'class': 'fab fa-github' })
+									_react2.default.createElement('i', { className: 'fab fa-github' })
 								),
 								_react2.default.createElement(
 									'a',
 									{ href: 'https://www.linkedin.com/in/xcjackpan/', target: '_blank' },
-									_react2.default.createElement('i', { 'class': 'fab fa-linkedin' })
+									_react2.default.createElement('i', { className: 'fab fa-linkedin' })
 								),
 								_react2.default.createElement(
 									'a',
 									{ href: 'mailto:xj2pan@uwaterloo.ca', target: '_top' },
-									_react2.default.createElement('i', { 'class': 'fas fa-envelope' })
+									_react2.default.createElement('i', { className: 'fas fa-envelope' })
 								)
 							)
 						),
@@ -20887,18 +20887,18 @@ var ProjectBoardComponent = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				'div',
-				{ className: 'wrapper' },
+				_reactAddonsCssTransitionGroup2.default,
+				{ transitionName: 'transition',
+					transitionAppear: true,
+					transitionAppearTimeOut: 200,
+					transitionEnterTimeout: 200,
+					transitionLeaveTimeout: 200 },
 				_react2.default.createElement(
-					_reactAddonsCssTransitionGroup2.default,
-					{ transitionName: 'transition',
-						transitionAppear: true,
-						transitionAppearTimeOut: 200,
-						transitionEnterTimeout: 200,
-						transitionLeaveTimeout: 200 },
+					'div',
+					{ className: 'project-div', key: this.props.page, style: { display: this.props.display } },
 					_react2.default.createElement(
 						'div',
-						{ className: 'projects', key: this.props.page, style: { display: this.props.display } },
+						{ className: 'projects' },
 						_react2.default.createElement(
 							'h2',
 							null,
@@ -21100,18 +21100,18 @@ var BlogContainer = function (_React$Component) {
 			// make sure you have the same amount of charactrs
 
 			return _react2.default.createElement(
-				'div',
-				null,
+				_reactAddonsCssTransitionGroup2.default,
+				{ transitionName: 'transition',
+					transitionAppear: true,
+					transitionAppearTimeOut: 200,
+					transitionEnterTimeout: 200,
+					transitionLeaveTimeout: 200 },
 				_react2.default.createElement(
-					_reactAddonsCssTransitionGroup2.default,
-					{ transitionName: 'transition',
-						transitionAppear: true,
-						transitionAppearTimeOut: 200,
-						transitionEnterTimeout: 200,
-						transitionLeaveTimeout: 200 },
+					'div',
+					{ className: 'blog-div', key: this.props.page, style: { display: this.props.display } },
 					_react2.default.createElement(
 						'div',
-						{ className: 'blog', key: this.props.page, style: { display: this.props.display } },
+						{ className: 'blog' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'button' },
