@@ -13,7 +13,7 @@ export default class ProjectComponent extends React.Component {
 				<a href={this.props.link} target="_blank"><div className="project-hover">
 					<img className="project-preview" src={this.props.image}/>
 					<div className="overlay">
-						<div className="text">{this.props.description}</div>
+						<div className="text">{this.props.description} <br /> <span className="tools">{this.props.tools}</span> </div>
 					</div>
 				</div></a>
 				<p className="project-description">{this.props.projectname}</p>

@@ -20,36 +20,43 @@ export default class ProjectBoardComponent extends React.Component {
  						<h2>Here's a look at what I've done!</h2>
 	 					<div className="projects-row">
 	 						<ProjectComponent className ="square"
-	 										  projectname = "Chroma"
-	 										  image = "chroma.png"
-	 										  description = "Android Studio, Java, XML"
-	 										  link = "https://github.com/xcjackpan/Chroma"/>
+	 										  projectname = "UWclasswatch"
+	 										  image = "classwatch.png"
+	 										  description = "Get emails when there's a spot open for enrolment in a UWaterloo class"
+	 										  tools = "React, node.js, Javascript, Firebase"
+	 										  link = "https://github.com/xcjackpan/ClassWatch"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Puppr"
 	 										  image = "puppr.png"
-	 										  description = "React, Clarifai API, Javascript"
+	 										  description = "Image gallery that filters out non-dog photos"
+	 										  tools = "React, Javascript"
 	 										  link = "https://github.com/xcjackpan/puppr"/>
 	 						<ProjectComponent  className ="square"
 	 										  projectname = "reSTARant"
 	 										  image = "restarant.png"
-	 										  description = "React Native, Google OCR API"
+	 										  description = "Take a photo of a restaurant's sign to see its reviews"
+	 										  tools = "React Native"
 	 										  link = "https://github.com/xcjackpan/restARant"/>
 	 					</div>
 	 					<div className="projects-row">
 	 						<ProjectComponent className ="square"
+	 										  projectname = "Chroma"
+	 										  image = "chroma.png"
+	 										  description = "Colorful mobile game"
+	 										  tools = "Android Studio, Java"
+	 										  link = "https://github.com/xcjackpan/Chroma"/>
+	 						<ProjectComponent className ="square"
 	 										  projectname = "Audio Visualiser"
 	 										  image = "visualiser.png"
-	 										  description = "Javascript"
+	 										  description = "Shows you how a song looks"
+	 										  tools = "Javascript"
 	 										  link = "https://github.com/xcjackpan/AudioAnalyzer"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = "When Kevin President"
 	 										  image = "kevin.png"
-	 										  description = "Javascript"
+	 										  description = "Why read lot word when few word do trick?"
+	 										  tools = "Javascript"
 	 										  link = "https://github.com/xcjackpan/WhenKevinPresident"/>
-	 						<ProjectComponent className ="square"
-	 										  projectname = "Coming soon!"
-	 										  image = "tbd.png"
-	 										  description = "Who knows what the future holds?"/>
 	 					</div>
 					</div>
 			</div>
