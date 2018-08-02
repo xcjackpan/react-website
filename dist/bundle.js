@@ -21099,7 +21099,7 @@ var BlogContainer = function (_React$Component) {
 			}
 		};
 
-		_this.maxPage = 0;
+		_this.maxPage = 3;
 		_this.state = {
 			currentpage: 0
 		};
@@ -21109,10 +21109,10 @@ var BlogContainer = function (_React$Component) {
 	_createClass(BlogContainer, [{
 		key: 'render',
 		value: function render() {
-			var titleArray = ["Developing a Mobile Game", "Building a Website - Part 1", "Debate and Public Speaking", "FILLER4", "FILLER5", "FILLER6"];
-			var dateArray = ["12/26/2017", "01/10/2018", "01/24/2018", "00/00/00", "00/00/00", "00/00/00"];
-			var previewArray = ["I began working on Chroma about a week after I picked up Android Studio. As it turns out, you can only follow along with Youtube tutorials for...", "This is going to be sort of meta - some thoughts about my website being posted on my website -  but bear with me. I started thinking about...", "I gave my first speech in a stuffy classroom in front of a few upper-year debaters acting as judges. Even now, I vividly remember being...", "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...", "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...", "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec..."];
-			var linkArray = ["dist/posts/chroma.html", "dist/posts/website.html", "dist/posts/speaking.html", "#", "#", "#"];
+			var titleArray = ["ClassWatch - Problem Analysis", "Debate and Public Speaking", "Building a Website - Part 1", "Developing a Mobile Game", "FILLER5", "FILLER6"];
+			var dateArray = ["08/01/2018", "01/24/2018", "01/10/2018", "12/26/2017", "00/00/00", "00/00/00"];
+			var previewArray = ["This summer, a fellow Waterloo student and I launched ClassWatch, a web application made specifically for UW students to help with course...", "I gave my first speech in a stuffy classroom in front of a few upper-year debaters acting as judges. Even now, I vividly remember being...", "This is going to be sort of meta - some thoughts about my website being posted on my website -  but bear with me. I started thinking about...", "I began working on Chroma about a week after I picked up Android Studio. As it turns out, you can only follow along with Youtube tutorials for...", "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...", "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec..."];
+			var linkArray = ["dist/posts/classwatch.html", "dist/posts/speaking.html", "dist/posts/website.html", "dist/posts/chroma.html", "#", "#"];
 			// make sure you have the same amount of charactrs
 
 			return _react2.default.createElement(
@@ -21137,18 +21137,18 @@ var BlogContainer = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'previews' },
-							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.maxPage - this.state.currentpage + 2],
-								date: dateArray[this.maxPage - this.state.currentpage + 2],
-								previewtext: previewArray[this.maxPage - this.state.currentpage + 2],
-								link: linkArray[this.maxPage - this.state.currentpage + 2] }),
-							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.maxPage - this.state.currentpage + 1],
-								date: dateArray[this.maxPage - this.state.currentpage + 1],
-								previewtext: previewArray[this.maxPage - this.state.currentpage + 1],
-								link: linkArray[this.maxPage - this.state.currentpage + 1] }),
-							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.maxPage - this.state.currentpage],
-								date: dateArray[this.maxPage - this.state.currentpage],
-								previewtext: previewArray[this.maxPage - this.state.currentpage],
-								link: linkArray[this.maxPage - this.state.currentpage] })
+							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.state.currentpage],
+								date: dateArray[this.state.currentpage],
+								previewtext: previewArray[this.state.currentpage],
+								link: linkArray[this.state.currentpage] }),
+							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.state.currentpage + 1],
+								date: dateArray[this.state.currentpage + 1],
+								previewtext: previewArray[this.state.currentpage + 1],
+								link: linkArray[this.state.currentpage + 1] }),
+							_react2.default.createElement(_PostPreviewComponent2.default, { title: titleArray[this.state.currentpage + 2],
+								date: dateArray[this.state.currentpage + 2],
+								previewtext: previewArray[this.state.currentpage + 2],
+								link: linkArray[this.state.currentpage + 2] })
 						),
 						_react2.default.createElement(
 							'div',
@@ -21208,9 +21208,11 @@ var PostPreviewComponent = function (_React$Component) {
 	_createClass(PostPreviewComponent, [{
 		key: 'render',
 		value: function render() {
+			console.log(this.props.title + " and " + this.props.link);
+
 			return _react2.default.createElement(
 				'div',
-				{ className: 'post-preview' },
+				{ className: 'post-preview', style: { display: this.props.link === '#' ? 'none' : 'block' } },
 				_react2.default.createElement(
 					'h2',
 					{ className: 'post-title' },
