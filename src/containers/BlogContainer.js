@@ -28,15 +28,15 @@ export default class BlogContainer extends React.Component {
 	}
 
 	render() {
-		const titleArray = ["ClassWatch - Problem Analysis", "Debate and Public Speaking", "Building a Website - Part 1", "Developing a Mobile Game", "FILLER5", "FILLER6"];
-		const dateArray = ["08/01/2018", "01/24/2018", "01/10/2018", "12/26/2017", "00/00/00", "00/00/00"];
+		const titleArray = ["Reflections on ClassWatch", "Debate and Public Speaking", "Reflections on My Personal Site", "Reflections on Chroma", "A Blog's Purpose", "FILLER6"];
+		const dateArray = ["08/01/2018", "01/24/2018", "01/10/2018", "12/26/2017", "12/03/2017", "00/00/00"];
 		const previewArray = ["This summer, a fellow Waterloo student and I launched ClassWatch, a web application made specifically for UW students to help with course...",
-							  "I gave my first speech in a stuffy classroom in front of a few upper-year debaters acting as judges. Even now, I vividly remember being...",
-							  "This is going to be sort of meta - some thoughts about my website being posted on my website -  but bear with me. I started thinking about...",
-							  "I began working on Chroma about a week after I picked up Android Studio. As it turns out, you can only follow along with Youtube tutorials for...",
-							  "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec...",
+							  "I debated competitively through all four years of high school. By competitive, I mean practices and coaches and tournaments. I was in...",
+							  "I'm writing this after having re-designed my site twice, with a third time in the works. That should give you a pretty good idea of how much...",
+							  "When I decided I wanted to make a mobile game, all the programming knowledge I had came from a month of self-taught Java fundamentals and two...",
+							  "Welcome all to the first post of my blog. I'm writing this as a short introduction for (hopefully) many other posts to come. As of now, the plan is...",
 							  "Lorem ipsum dolor sit amet, sea idque virtute cu. Delectus facilisi facilisis per ei, duo ea suas tempor inermis. Eos omnis instructior id. Nec..."];
-		const linkArray = ["dist/posts/classwatch.html", "dist/posts/speaking.html", "dist/posts/website.html", "dist/posts/chroma.html", "#", "#"];
+		const linkArray = ["dist/posts/classwatch.html", "dist/posts/speaking.html", "dist/posts/website.html", "dist/posts/chroma.html", "dist/posts/intro.html", "#"];
 		// make sure you have the same amount of charactrs
 
 		return (

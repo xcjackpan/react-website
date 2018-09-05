@@ -79,7 +79,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	overflow-y: auto;
+	overflow-y: visible;
 	overflow-x: hidden;
 	background-color: #FFF;
 }
@@ -572,6 +572,7 @@ html, body {
 	}
 
 	.blog {
+		margin-top: 10%;
 		font-size: 19px;
 		width: 76%;
 		margin-left: 12%;
@@ -655,7 +656,7 @@ html, body {
 	}
 
 	.blog {
-		margin-top: 4%;
+		margin-top: 10%;
 		font-size: 19px;
 		width: 80%;
 		margin-left: 10%;
