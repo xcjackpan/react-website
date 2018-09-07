@@ -29,7 +29,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  projectname = "Claire"
 	 										  image = "claire.png"
 	 										  description = "Chatbot for senior citizens. Finalist at Hack the 6ix 2018."
-	 										  tools = "React Native"
+	 										  tools = "React, node.js, Javascript, Firebase"
 	 										  link = "https://github.com/xcjackpan/hackthe6ix"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Always Sunny Soundboard"
