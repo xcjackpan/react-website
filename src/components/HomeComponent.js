@@ -8,7 +8,7 @@ export default class HomeComponent extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.display)
+		//console.log(this.props.display)
 		return(
 			<div>
 			 	<ReactCSSTransitionGroup transitionName="transition"

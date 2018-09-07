@@ -21,13 +21,13 @@ export default class MainContainer extends React.Component {
 	toHome = (e) => {
 		this.setState({ page: null });
 		setTimeout(function() { this.setState({ page: 'home' }); }.bind(this), 220);
-		console.log("HOME");
+		//console.log("HOME");
 	}
 
 	toAbout = (e) => {
 		if (this.state.page != 'about') {
 			this.setState({ page: 'change' });
-			console.log("ABOUT");	
+			//console.log("ABOUT");	
 			setTimeout(function() { this.setState({ page: 'about' }); }.bind(this), 220);
 		}
 	}
@@ -35,7 +35,7 @@ export default class MainContainer extends React.Component {
 	toProjects = (e) => {
 		if (this.state.page != 'projects') {
 			this.setState({ page: 'change' });		
-			console.log("PROJECTS");
+			//console.log("PROJECTS");
 			setTimeout(function() { this.setState({ page: 'projects' }); }.bind(this), 220);
 		}
 	}
@@ -43,7 +43,7 @@ export default class MainContainer extends React.Component {
 	toBlog = (e) => {
 		if (this.state.page != 'blog') {
 			this.setState({ page: 'change' });
-			console.log("BLOG");
+			//console.log("BLOG");
 			setTimeout(function() { this.setState({ page: 'blog' }); }.bind(this), 220);
 		}
 	}

@@ -8,8 +8,6 @@ export default class PostPreviewComponent extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.title + " and " + this.props.link);
-
 		return(
 			<div className="post-preview" style={{display: (this.props.link === '#')?'none':'block'}}>
 				<h2 className="post-title">{this.props.title}</h2>
