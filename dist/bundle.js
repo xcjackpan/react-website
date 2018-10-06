@@ -20740,13 +20740,13 @@ var MainContainer = function (_React$Component) {
 			setTimeout(function () {
 				this.setState({ page: 'home' });
 			}.bind(_this), 220);
-			console.log("HOME");
+			//console.log("HOME");
 		};
 
 		_this.toAbout = function (e) {
 			if (_this.state.page != 'about') {
 				_this.setState({ page: 'change' });
-				console.log("ABOUT");
+				//console.log("ABOUT");	
 				setTimeout(function () {
 					this.setState({ page: 'about' });
 				}.bind(_this), 220);
@@ -20756,7 +20756,7 @@ var MainContainer = function (_React$Component) {
 		_this.toProjects = function (e) {
 			if (_this.state.page != 'projects') {
 				_this.setState({ page: 'change' });
-				console.log("PROJECTS");
+				//console.log("PROJECTS");
 				setTimeout(function () {
 					this.setState({ page: 'projects' });
 				}.bind(_this), 220);
@@ -20766,7 +20766,7 @@ var MainContainer = function (_React$Component) {
 		_this.toBlog = function (e) {
 			if (_this.state.page != 'blog') {
 				_this.setState({ page: 'change' });
-				console.log("BLOG");
+				//console.log("BLOG");
 				setTimeout(function () {
 					this.setState({ page: 'blog' });
 				}.bind(_this), 220);
@@ -22768,7 +22768,7 @@ var HomeComponent = function (_React$Component) {
 	_createClass(HomeComponent, [{
 		key: 'render',
 		value: function render() {
-			console.log(this.props.display);
+			//console.log(this.props.display)
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -23009,19 +23009,19 @@ var ProjectBoardComponent = function (_React$Component) {
 							_react2.default.createElement(_ProjectComponent2.default, { className: 'square',
 								projectname: 'UWclasswatch',
 								image: 'classwatch.png',
-								description: 'Notifications for course enrolment. 700+ users.',
+								description: 'Notifications for course enrolment. 1k+ users.',
 								tools: 'React, node.js, Javascript, Firebase',
 								link: 'https://github.com/xcjackpan/ClassWatch' }),
 							_react2.default.createElement(_ProjectComponent2.default, { className: 'square',
 								projectname: 'Claire',
 								image: 'claire.png',
 								description: 'Chatbot for senior citizens. Finalist at Hack the 6ix 2018.',
-								tools: 'React Native',
+								tools: 'React, node.js, Javascript, Firebase',
 								link: 'https://github.com/xcjackpan/hackthe6ix' }),
 							_react2.default.createElement(_ProjectComponent2.default, { className: 'square',
 								projectname: 'Always Sunny Soundboard',
 								image: 'alwayssunny.png',
-								description: 'Plays quotes from Always Sunny. 250+ Play Store downloads.',
+								description: 'Plays quotes from Always Sunny. 1k+ Play Store downloads.',
 								tools: 'React Native',
 								link: 'https://github.com/xcjackpan/always-sunny-soundboard' })
 						),
@@ -23326,8 +23326,6 @@ var PostPreviewComponent = function (_React$Component) {
 	_createClass(PostPreviewComponent, [{
 		key: 'render',
 		value: function render() {
-			console.log(this.props.title + " and " + this.props.link);
-
 			return _react2.default.createElement(
 				'div',
 				{ className: 'post-preview', style: { display: this.props.link === '#' ? 'none' : 'block' } },

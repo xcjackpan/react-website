@@ -22,7 +22,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 						<ProjectComponent className ="square"
 	 										  projectname = "UWclasswatch"
 	 										  image = "classwatch.png"
-	 										  description = "Notifications for course enrolment. 700+ users."
+	 										  description = "Notifications for course enrolment. 1k+ users."
 	 										  tools = "React, node.js, Javascript, Firebase"
 	 										  link = "https://github.com/xcjackpan/ClassWatch"/>
 	 						<ProjectComponent className ="square"
@@ -34,7 +34,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Always Sunny Soundboard"
 	 										  image = "alwayssunny.png"
-	 										  description = "Plays quotes from Always Sunny. 400+ Play Store downloads."
+	 										  description = "Plays quotes from Always Sunny. 1k+ Play Store downloads."
 	 										  tools = "React Native"
 	 										  link = "https://github.com/xcjackpan/always-sunny-soundboard"/>
 	 					</div>
