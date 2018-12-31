@@ -23021,7 +23021,7 @@ var ProjectBoardComponent = function (_React$Component) {
 							_react2.default.createElement(_ProjectComponent2.default, { className: 'square',
 								projectname: 'Always Sunny Soundboard',
 								image: 'alwayssunny.png',
-								description: 'Just a soundboard. 2k+ Play Store downloads, 4.1 stars.',
+								description: 'Just a soundboard. 2.5k+ Play Store downloads, 4.1 stars.',
 								tools: 'React Native',
 								link: 'https://github.com/xcjackpan/always-sunny-soundboard' })
 						),
