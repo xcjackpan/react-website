@@ -22888,7 +22888,7 @@ var AboutComponent = function (_React$Component) {
 							_react2.default.createElement(
 								'p',
 								null,
-								'I\'m a second-year student at the University of Waterloo studying computer science. I made this site using React and StackOverflow.',
+								'I\'m a second-year student at the University of Waterloo studying computer science. I made this site with the power of React and StackOverflow.',
 								_react2.default.createElement('br', null),
 								' ',
 								_react2.default.createElement('br', null),
