@@ -79,8 +79,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	overflow-y: visible;
-	overflow-x: hidden;
+	overflow: hidden;
 	background-color: #FFF;
 }
 
@@ -106,18 +105,25 @@ html, body {
 
 .banner {
 	z-index: 9999;
-	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
+	display: flex;
+	font-family: Raleway;
+	color: #4F6170;
 }
 
 .banner h1 {
-	font-family: Raleway;
-	color: #4F6170;
 	font-size: 150px;
 	font-weight: 400;
-	margin: auto;
-	display: flex;
+}
+
+.banner h4 {
+	font-style: italic;
+	font-size: 40px;
+	font-weight: 400;
+	padding-right: 1%;
+	padding-bottom: 4%;
 }
 
 .home-nav {
@@ -131,7 +137,6 @@ html, body {
 }
 
 .home-nav ul {
-	display: flex;
 	margin: auto;
 }
 
@@ -321,11 +326,12 @@ html, body {
 
 .project-div {
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	position: absolute;
-	top: 58%;
+	top: 60%;
 	left: 50%;
-	transform: translate(-50%, -58%);
+	transform: translate(-50%, -60%);
+	overflow-y: scroll;
 }
 
 .projects {
@@ -336,13 +342,8 @@ html, body {
 	width: 76vw;
 	margin-left: 12vw;
 	margin-right: 12vw;
+	margin-top: 12vh;
 	flex-direction: column;
-}
-
-.projects h2 {
-	line-height: 2.0;
-	padding-top: 5.5%;
-	padding-bottom: 1%;
 }
 
 .projects-row {
@@ -513,8 +514,7 @@ html, body {
 
 	.nav-items {
 		margin-right: 2%;
-		width: 35%;	
-		justify-content: space-between;
+		width: 45%;	
 		right: 5%;
 	}
 
@@ -527,7 +527,6 @@ html, body {
 
 	.icons {
 		width: 35%;
-		justify-content: space-between;
 		margin-top: 5%;
 		font-size: 28px;
 	}
@@ -545,12 +544,7 @@ html, body {
 
 	.projects {
 		font-size: 22px;
-	}
-
-	.projects h2 {
-		line-height: 2.0;
-		padding-top: 5.5%;
-		padding-bottom: 1%;
+		margin-top: 16vh;
 	}
 
 	.projects-row {
@@ -559,7 +553,7 @@ html, body {
 	}
 
 	.project-square {
-		padding: 0 30px 0 30px;
+		padding: 0 20px 0 20px;
 		width: 100%;
 	}
 
@@ -596,95 +590,14 @@ html, body {
 
 @media only screen and (max-width : 1000px) {
 
-	.jelly {
-		width: 22%;
-		top: 20%;
-		left: 12%;
-	}
-
-	.nav-items {
-		margin-right: 2%;
-		width: 40%;	
-		right: 5%;
-	}
-
 	.bio {
-		font-size: 22px;
-		width: 35%;
-		top: 20%;
-		margin-left: 12%;
-	}
-
-	.icons {
-		width: 45%;
-		margin-top: 7%;
-		font-size: 28px;
-	}
-
-	.resume-button {
-		width: 45%;
-		font-size: 24px;
-	}
-
-	.head {
-		border-radius: 50%;
-		width: 32%;
-		right: 14%;
-	}
-
-	.projects {
-		font-size: 21px;
-	}
-
-	.projects h2 {
-		line-height: 2.0;
-		padding-top: 4%;
-		padding-bottom: 4%;
-	}
-
-	.projects-row {
-		padding-top: 2.5%;
-		padding-bottom: 2.5%;
-	}
-
-	.text {
-		font-size: 20px;
-	}
-
-	.project-description {
-		margin-top: 4%;
-	}
-
-	.blog {
-		margin-top: 10%;
-		font-size: 19px;
-		width: 80%;
-		margin-left: 10%;
-	}
-
-	.date {
-		margin-bottom: 2%;
-	}
-
-	.readmore {
-		margin-bottom: 3%;
-	}
-
-}
-
-@media only screen and (max-width : 950px) {
-
-	.bio {
-		font-size: 22px;
 		width: 38%;
 		top: 24%;
-		margin-left: 12%;
 	}
 
 	.icons {
 		width: 45%;
 		margin-top: 7%;
-		font-size: 28px;
 	}
 
 	.resume-button {
@@ -698,23 +611,26 @@ html, body {
 		right: 12%;
 	}
 
+	.nav-items {
+		width: 50%;
+	}
+
 	.projects {
-		font-size: 21px;
 		width: 50%;
 		margin-left: 20%;
 		left: 3%;
 		top: 15%;
 		position: absolute;
-	}
-
-	.projects h2 {
-		display: none;
+		margin-top: 8vh;
 	}
 
 	.projects-row {
 		width: 100%;
-		display: flex;
 		flex-direction: column;
+	}
+
+	.project-description {
+		font-size: 25px;
 	}
 
 	.project-square {
@@ -737,77 +653,6 @@ html, body {
 		margin-right: 6%;
 		font-size: 80px;
 	}
-
-}
-
-@media only screen and (max-width : 880px) {
-
-	.banner h1 {
-		font-size: 120px;
-	}
-
-	.home-nav {
-		width: 55%;
-	}
-
-	.jelly {
-		width: 25%;
-		top: 20%;
-		left: 12%;
-	}
-
-	.nav-items {
-		width: 50%;	
-	}
-
-	.bio {
-		font-size: 20px;
-		width: 38%;
-		top: 30%;
-		margin-left: 7%;
-	}
-
-	.icons {
-		width: 45%;
-		margin-top: 7%;
-		font-size: 28px;
-	}
-
-	.resume-button {
-		width: 45%;
-		font-size: 24px;
-	}
-
-	.head {
-		border-radius: 50%;
-		width: 38%;
-		right: 8%;
-	}
-
-	.projects {
-		font-size: 21px;
-		width: 50%;
-		margin-left: 20%;
-		left: -4.5%;
-		top: 15%;
-	}
-
-	.project-square {
-		width: 120%;
-		padding-bottom: 5%;
-		padding-top: 5%;
-	}
-
-	.blog {
-		font-size: 19px;
-		width: 86%;
-		margin-left: 7%;
-	}
-
-	.date {
-		margin-bottom: 2%;
-	}
-
 }
 
 @media only screen and (max-width : 800px) {
@@ -856,12 +701,17 @@ html, body {
 		margin-left: 20%;
 		left: -5%;
 		top: 15%;
+		margin-top: 2vh;
 	}
 
 	.project-square {
 		width: 120%;
 		padding-bottom: 5%;
 		padding-top: 5%;
+	}
+
+	.project-description {
+		font-size: 22px;
 	}
 
 	.blog {
@@ -882,102 +732,17 @@ html, body {
 
 }
 
-@media only screen and (max-width : 700px) {
-
-	.banner h1 {
-		font-size: 100px;
-	}
-
-	.home-nav li {
-		font-size: 20px;
-	}
-
-	.jelly {
-		width: 30%;
-		top: 20%;
-		left: 10%;
-	}
-
-	.name {
-		left: 4%;
-		font-size: 20px;	
-	}
-
-	.nav-items {
-		right: 4%;
-		width: 60%;	
-	}
-
-	.nav-items li {
-		font-size: 20px;
-	}
-
-	.bio {
-		font-size: 19px;
-		width: 44%;
-		top: 38%;
-		margin-left: 5%;
-	}
-
-	.icons {
-		width: 48%;
-		margin-top: 7%;
-		font-size: 28px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 20px;
-	}
-
-	.head {
-		border-radius: 50%;
-		width: 40%;
-		right: 5%;
-	}
-
-	.projects {
-		font-size: 21px;
-		width: 50%;
-		margin-left: 20%;
-		left: -3.5%;
-		top: 15%;
-	}
-
-	.project-square {
-		width: 120%;
-		padding-bottom: 5%;
-		padding-top: 5%;
-	}
-
-	.blog {
-		font-size: 19px;
-		width: 94%;
-		margin-left: 3%;
-	}
-
-	.post-preview {
-		font-size: 18px;
-		padding-top: 4%;
-		padding-bottom: 4%;
-	}
-
-	.readmore {
-		margin-bottom: 3%;
-	}
-
-	.button {
-		margin-left: 6%;
-		margin-right: 6%;
-		font-size: 75px;
-	}
-
-}
-
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width : 650px) {
 
 	.banner h1 {
 		font-size: 80px;
+	}
+
+	.banner h4 {
+		font-size: 28px;
+		font-weight: 400;
+		padding-right: 1%;
+		padding-bottom: 4%;
 	}
 
 	.home-nav {
@@ -985,7 +750,7 @@ html, body {
 	}
 
 	.home-nav li {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.jelly {
@@ -1005,10 +770,8 @@ html, body {
 	}
 
 	.about {
-		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
-		width: 100%;
 		margin-top: 10%;
 	}
 
@@ -1050,7 +813,6 @@ html, body {
 		font-size: 15px;
 	}
 
-
 	.blog {
 		font-size: 19px;
 		width: 96%;
@@ -1065,164 +827,6 @@ html, body {
 
 	.readmore {
 		margin-bottom: 3%;
-	}
-
-}
-
-@media only screen and (max-width : 560px) {
-
-	.about {
-		width: 100%;
-		margin-top: 6%;
-	}
-
-	.bio {
-		margin-left: 0%;
-		font-size: 18px;
-		width: 75%;
-	}
-
-	.icons {
-		width: 48%;
-		margin-top: 6%;
-		font-size: 24px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 20px;
-	}
-
-	.head {
-		margin-left: 8%;
-		margin-bottom: 6%;
-		border-radius: 50%;
-		width: 45%;
-	}
-
-	.projects {
-		font-size: 21px;
-		width: 50%;
-		margin-left: 20%;
-		left: -5.5%;
-		top: 15%;
-	}
-
-	.post-preview h2 {
-		font-size: 22px;
-	}
-
-	.post-preview {
-		font-size: 17px;
-		clear: both;
-		padding-top: 4%;
-		padding-bottom: 4%;
-	}
-
-}
-
-@media only screen and (max-width : 525px) {
-
-	.banner h1 {
-		font-size: 80px;
-	}
-
-	.home-nav {
-		width: 70%;
-	}
-
-	.home-nav li {
-		font-size: 18px;
-	}
-
-	.jelly {
-		width: 35%;
-		top: 22%;
-		left: 4%;
-	}
-
-	.name {
-		display: none;
-	}
-
-	.nav-items {
-		width: 100%;	
-		right: 5%;
-		justify-content: space-around;
-	}
-
-	.bio {
-		margin-left: 0%;
-		font-size: 17px;
-		width: 85%;
-		bottom: 5%;
-	}
-
-	.text {
-		font-size: 16px;
-	}
-
-	.tools {
-		font-style: italic;
-		font-size: 12px;
-	}
-
-	.blog {
-		margin-top: 10%;
-		padding-top: 5%;
-		font-size: 16px;
-		width: 94%;
-		margin-left: 3%;
-	}
-
-	.post-preview h2 {
-		font-size: 21px;
-	}
-
-	.post-preview {
-		font-size: 17px;
-		padding-top: 4%;
-		padding-bottom: 4%;
-	}
-
-}
-
-@media only screen and (max-width : 450px) {
-
-	.projects {
-		font-size: 21px;
-		width: 50%;
-		margin-left: 20%;
-		left: -6.5%;
-		top: 15%;
-	}
-
-	.project-square {
-		width: 120%;
-		padding-bottom: 5%;
-		padding-top: 5%;
-	}
-
-	.blog {
-		margin-top: 10%;
-		padding-top: 5%;
-		font-size: 16px;
-		width: 94%;
-		margin-left: 3%;
-	}
-
-	.post-preview h2 {
-		font-size: 19px;
-	}
-
-	.post-preview {
-		font-size: 16px;
-	}
-
-	.button {
-		margin-left: 6%;
-		margin-right: 6%;
-		font-size: 60px;
 	}
 
 }
@@ -1252,15 +856,11 @@ html, body {
 	}
 
 	.about {
-		width: 100%;
 		margin-top: 14%;
 	}
 
 	.bio {
-		margin-left: 0%;
-		font-size: 17px;
 		width: 90%;
-		bottom: 5%;
 	}
 
 	.icons {
@@ -1301,171 +901,6 @@ html, body {
 
 	.tools {
 		font-size: 11px;
-	}
-
-}
-
-
-@media only screen and (max-width : 380px) {
-
-	.banner h1 {
-		font-size: 65px;
-	}
-
-	.home-nav {
-		width: 75%;
-	}
-
-	.home-nav li {
-		font-size: 18px;
-	}
-
-	.jelly {
-		width: 40%;
-		top: 28%;
-		left: 1%;
-	}
-
-	.nav-items li {
-		font-size: 17px;
-	}
-
-	.about {
-		width: 100%;
-		margin-top: 14%;
-	}
-
-	.bio h1 {
-		font-size: 30px;
-	}
-
-	.bio {
-		margin-left: 0%;
-		font-size: 16px;
-		width: 90%;
-		bottom: 5%;
-	}
-
-	.icons {
-		width: 48%;
-		margin-top: 6%;
-		font-size: 24px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 20px;
-	}
-
-	.head {
-		margin-left: 8%;
-		margin-bottom: 8%;
-		border-radius: 50%;
-		width: 65%;
-	}
-
-	.blog {
-		margin-top: 10%;
-		padding-top: 4%;
-		font-size: 16px;
-		width: 94%;
-		margin-left: 3%;
-	}
-
-	.post-preview h2 {
-		font-size: 18px;
-	}
-
-	.post-preview {
-		font-size: 12px;
-	}
-
-	.button {
-		margin-left: 2%;
-		margin-right: 2%;
-		font-size: 50px;
-	}
-
-}
-
-@media only screen and (max-width : 350px) {
-
-	.banner h1 {
-		font-size: 65px;
-	}
-
-	.home-nav {
-		width: 75%;
-	}
-
-	.home-nav li {
-		font-size: 18px;
-	}
-
-	.jelly {
-		width: 40%;
-		top: 28%;
-		left: 1%;
-	}
-
-	.nav-items li {
-		font-size: 17px;
-	}
-
-	.about {
-		width: 100%;
-		margin-top: 14%;
-	}
-
-	.bio h1 {
-		font-size: 26px;
-	}
-
-	.bio {
-		margin-left: 0%;
-		font-size: 15px;
-		width: 90%;
-		bottom: 5%;
-	}
-
-	.icons {
-		width: 48%;
-		margin-top: 6%;
-		font-size: 22px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 15px;
-	}
-
-	.head {
-		margin-left: 8%;
-		margin-bottom: 6%;
-		border-radius: 50%;
-		width: 55%;
-	}
-
-	.blog {
-		margin-top: 10%;
-		padding-top: 5%;
-		font-size: 16px;
-		width: 94%;
-		margin-left: 3%;
-	}
-
-	.post-preview h2 {
-		font-size: 17px;
-	}
-
-	.post-preview {
-		font-size: 12px;
-	}
-
-	.button {
-		margin-left: 2%;
-		margin-right: 2%;
-		font-size: 50px;
 	}
 
 }

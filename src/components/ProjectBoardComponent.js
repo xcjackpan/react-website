@@ -17,7 +17,6 @@ export default class ProjectBoardComponent extends React.Component {
 							  	 transitionLeaveTimeout={200}>
 			<div className="project-div" key={this.props.page} style={{ display:this.props.display }}>
  					<div className="projects">
- 						<h2>Here's a look at what I've done!</h2>
 	 					<div className="projects-row">
 	 						<ProjectComponent className ="square"
 	 										  projectname = "UWclasswatch"
@@ -67,11 +66,11 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  tools = "Javascript"
 	 										  link = "https://github.com/xcjackpan/AudioAnalyzer"/>
 	 						<ProjectComponent className ="square"
-	 										  projectname = "When Kevin President"
-	 										  image = "kevin.png"
-	 										  description = "Why read lot word when few word do trick?"
+	 										  projectname = "Dunderbot"
+	 										  image = "dunderbot.png"
+	 										  description = "Text generation using Markov chains"
 	 										  tools = "Javascript"
-	 										  link = "https://github.com/xcjackpan/WhenKevinPresident"/>
+	 										  link = "https://github.com/xcjackpan/dunderbot"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = ""
 	 										  image = "tbd.png"
