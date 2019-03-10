@@ -19,7 +19,7 @@ export default class AboutComponent extends React.Component {
 							<div className="bio">
 								<h1>Hi there.</h1>
 								<br/>
-								<p>I'm a second-year student at the University of Waterloo studying computer science. I made this site with the power of React and StackOverflow.<br/> <br/>Feel free to take a look around!</p>
+								<p>I'm a computer science student at the University of Waterloo. I love to code and tell bad jokes. Usually at the same time.<br/> <br/>Let's make something cool!</p>
 								<br/>
 								<div className="resume-button">
 									<a href="resume.pdf" target="_blank">

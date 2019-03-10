@@ -33,7 +33,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Always Sunny Soundboard"
 	 										  image = "alwayssunny.png"
-	 										  description = "Just a soundboard. 2.5k+ Play Store downloads, 4.1 stars."
+	 										  description = "Simple soundboard. 3.5k+ Play Store installs, 4.1 stars."
 	 										  tools = "React Native"
 	 										  link = "https://github.com/xcjackpan/always-sunny-soundboard"/>
 	 					</div>
