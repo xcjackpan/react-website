@@ -19,7 +19,7 @@ export default class HomeComponent extends React.Component {
 					<div className="titleContainer" key={this.props.page} style={{display:this.props.display}}>
 						<div className="banner">
 							<h1>JACK PAN</h1>
-							<h4>SOFTWARE DEVELOPER</h4>
+							<h4>UNDERGRAD CS</h4>
 						</div>
 						<ul className="home-nav">
 			 				<li onClick={this.props.toAbout}>ABOUT</li>
