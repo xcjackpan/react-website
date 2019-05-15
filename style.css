@@ -7,11 +7,9 @@
 	src: url('fonts/Raleway-Light.ttf');
 }
 
-/*Consider white background*/
 /*blue-background: E6EFF7*/
 
 /* TRANSITIONS */
-
 
 .transition-enter {
   	opacity: 0.01;
@@ -119,12 +117,21 @@ html, body {
 }
 
 .banner h4 {
-	font-style: italic;
 	font-size: 40px;
 	font-weight: 400;
 	padding-right: 2%;
 	padding-bottom: 4%;
 }
+
+/*
+#short-tag {
+	display: none;
+}
+
+#long-tag {
+	display: block;
+}
+*/
 
 .home-nav {
 	z-index: 9999;
@@ -159,6 +166,29 @@ html, body {
 .home-nav li:hover {
 	cursor: pointer;
 	border-bottom: 1.25px solid #4F6170;
+}
+
+#home-resume {
+	text-align: center;
+	display: flex-wrap;
+	width: 30%;
+	line-height: 2.0;
+	border: 1px solid #4F6170;
+	color: #4F6170;
+	font-family: Raleway;
+	font-size: 24px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	font-weight: bold;
+}
+
+#home-resume:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #D7B3C1;
 }
 
 .jelly {
@@ -222,6 +252,10 @@ html, body {
 	border-bottom: 1.25px solid #4F6170;
 }
 
+#nav-resume {
+	font-weight: bold;
+}
+
 .about-div {
 	width: 100%;
 	height: 90%;
@@ -254,11 +288,11 @@ html, body {
 }
 
 .icons {
-	width: 30%;
+	width: 50%;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 5%;
-	font-size: 30px;
+	font-size: 36px;
 }
 
 .icons a {
@@ -281,37 +315,6 @@ html, body {
 .icons i:hover {
 	color: #D7B3C1;
 	cursor: pointer;
-}
-
-.resume-button {
-	text-align: center;
-	display: flex-wrap;
-	width: 30%;
-	line-height: 2.0;
-	border: 1px solid #4F6170;
-	color: #4F6170;
-	font-family: Raleway;
-	font-size: 24px;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
-}
-
-.resume-button p {
-	margin: auto;
-}
-
-.resume-button a {
-	text-decoration: none;
-	color: #4F6170;
-}
-
-.resume-button:hover {
-	cursor: pointer;
-	color: white;
-	background-color: #D7B3C1;
 }
 
 .head {
@@ -414,92 +417,6 @@ html, body {
 	margin-top: 4%;
 }
 
-.blog-div {
-	width: 100%;
-	height: 86%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -54%);
-}
-
-.blog {
-	display: flex;
-	margin-top: 4%;
-	flex-direction: row;
-	font-family: Raleway;
-	font-size: 22px;
-	color: #4F6170;
-	width: 72%;
-	margin-left: 14%;
-}
-
-.previews {
-	max-height: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.post-preview {
-	clear: both;
-	padding-top: 4%;
-	padding-bottom: 4%;
-}
-
-.date {
-	margin-bottom: 3%;
-}
-
-.readmore {
-	float: left;
-	line-height: 1.5;
-	border-bottom: 1px solid #4F6170;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
-}
-
-.readmore:hover {
-	cursor: pointer;
-	background-color: #D7B3C1;
-}
-
-.readmore a {
-	text-decoration: none;
-	color: #4F6170;
-}
-
-.readmore a:visited {
-	color: #4F6170;
-}
-
-.button {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	margin-left: 6%;
-	margin-right: 6%;
-	font-size: 80px;
-}
-
-.button i {
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s ease;
-}
-
-.button i:hover {
-	cursor: pointer;
-	color: #D7B3C1;
-}
-
 /* Media Queries */
 
 /*Home*/
@@ -531,11 +448,6 @@ html, body {
 		font-size: 28px;
 	}
 
-	.resume-button {
-		width: 35%;
-		font-size: 24px;
-	}
-
 	.head {
 		border-radius: 50%;
 		width: 28%;
@@ -565,27 +477,6 @@ html, body {
 		margin-top: 4%;
 	}
 
-	.blog {
-		margin-top: 10%;
-		font-size: 19px;
-		width: 76%;
-		margin-left: 12%;
-	}
-
-	.post-preview {
-		padding-top: 2%;
-		padding-bottom: 2%;
-	}
-
-	.readmore {
-		margin-bottom: 2%;
-	}
-
-	.button {
-		margin-left: 6%;
-		margin-right: 6%;
-		font-size: 80px;
-	}
 }
 
 @media only screen and (max-width : 1000px) {
@@ -598,11 +489,6 @@ html, body {
 	.icons {
 		width: 45%;
 		margin-top: 7%;
-	}
-
-	.resume-button {
-		width: 45%;
-		font-size: 24px;
 	}
 
 	.head {
@@ -639,20 +525,6 @@ html, body {
 		padding-top: 5%;
 	}
 
-	.blog {
-		width: 86%;
-		margin-left: 7%;
-	}
-
-	.date {
-		margin-bottom: 2%;
-	}
-
-	.button {
-		margin-left: 6%;
-		margin-right: 6%;
-		font-size: 80px;
-	}
 }
 
 @media only screen and (max-width : 800px) {
@@ -662,7 +534,7 @@ html, body {
 	}
 
 	.home-nav {
-		width: 55%;
+		width: 70%;
 	}
 
 	.jelly {
@@ -682,11 +554,6 @@ html, body {
 		width: 48%;
 		margin-top: 7%;
 		font-size: 28px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 22px;
 	}
 
 	.head {
@@ -714,22 +581,6 @@ html, body {
 		font-size: 22px;
 	}
 
-	.blog {
-		font-size: 19px;
-		width: 90%;
-		margin-left: 5%;
-	}
-
-	.readmore {
-		margin-bottom: 3%;
-	}
-
-	.button {
-		margin-left: 6%;
-		margin-right: 6%;
-		font-size: 75px;
-	}
-
 }
 
 @media only screen and (max-width : 650px) {
@@ -746,10 +597,14 @@ html, body {
 	}
 
 	.home-nav {
-		width: 70%;
+		width: 80%;
 	}
 
 	.home-nav li {
+		font-size: 20px;
+	}
+
+	#home-resume {
 		font-size: 20px;
 	}
 
@@ -792,13 +647,6 @@ html, body {
 		font-size: 24px;
 	}
 
-	.resume-button {
-		text-align: center;
-		display: flex-wrap;
-		width: 48%;
-		font-size: 20px;
-	}
-
 	.head {
 		margin-left: 8%;
 		margin-bottom: 4%;
@@ -813,22 +661,6 @@ html, body {
 		font-size: 15px;
 	}
 
-	.blog {
-		font-size: 19px;
-		width: 96%;
-		margin-left: 2%;
-	}
-
-	.post-preview {
-		font-size: 18px;
-		padding-top: 4%;
-		padding-bottom: 4%;
-	}
-
-	.readmore {
-		margin-bottom: 3%;
-	}
-
 }
 
 @media only screen and (max-width : 400px) {
@@ -838,10 +670,14 @@ html, body {
 	}
 
 	.home-nav {
-		width: 75%;
+		width: 90%;
 	}
 
 	.home-nav li {
+		font-size: 18px;
+	}
+
+	#home-resume {
 		font-size: 18px;
 	}
 
@@ -867,11 +703,6 @@ html, body {
 		width: 48%;
 		margin-top: 6%;
 		font-size: 24px;
-	}
-
-	.resume-button {
-		width: 48%;
-		font-size: 20px;
 	}
 
 	.head {

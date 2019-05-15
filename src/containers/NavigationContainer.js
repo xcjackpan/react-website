@@ -23,7 +23,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 				 			<li onClick={this.props.toHome}>HOME</li>
 							<li onClick={this.props.toAbout}>ABOUT</li>
 					 		<li onClick={this.props.toProjects}>PROJECTS</li>
-					 		<li onClick={this.props.toBlog}>BLOG</li>
+					 		<li id="nav-resume" onClick={this.props.toResume}>RESUME</li>
 				 		</div>
 		 			</div>
 	 			</ReactCSSTransitionGroup>
