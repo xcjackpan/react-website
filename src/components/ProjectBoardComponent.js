@@ -22,18 +22,18 @@ export default class ProjectBoardComponent extends React.Component {
 	 										  projectname = "UWclasswatch"
 	 										  image = "classwatch.png"
 	 										  description = "Notifications for course enrolment. 1.1k+ users."
-	 										  tools = "React, node.js, Javascript, Firebase"
-	 										  link = "https://github.com/xcjackpan/ClassWatch"/>
+	 										  tools = "React, Node, Typescript, MongoDB"
+	 										  link = "https://github.com/xcjackpan/classwatch-v2"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Claire"
 	 										  image = "claire.png"
 	 										  description = "Chatbot for senior citizens. Finalist at Hack the 6ix 2018."
-	 										  tools = "React, node.js, Javascript, Firebase"
+	 										  tools = "React, Node, Javascript, Firebase"
 	 										  link = "https://github.com/xcjackpan/hackthe6ix"/>
 	 						<ProjectComponent className ="square"
 	 										  projectname = "Always Sunny Soundboard"
 	 										  image = "alwayssunny.png"
-	 										  description = "Simple soundboard. 4.5k+ Play Store installs, 4.1 stars."
+	 										  description = "Simple soundboard. 5.0k+ Play Store installs, 4.1 stars."
 	 										  tools = "React Native"
 	 										  link = "https://github.com/xcjackpan/always-sunny-soundboard"/>
 	 					</div>
