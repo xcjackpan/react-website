@@ -21,7 +21,7 @@ export default class ProjectBoardComponent extends React.Component {
 	 						<ProjectComponent className ="square"
 	 										  projectname = "UWclasswatch"
 	 										  image = "classwatch.png"
-	 										  description = "Notifications for course enrolment. 1.1k+ users."
+	 										  description = "Notifications for course enrolment. 1.5k+ users."
 	 										  tools = "React, Node, Typescript, MongoDB"
 	 										  link = "https://github.com/xcjackpan/classwatch-v2"/>
 	 						<ProjectComponent className ="square"
