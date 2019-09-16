@@ -361,8 +361,8 @@ html, body {
 }
 
 .project-hover {
+	border: solid 1px #4F6170;
 	position: relative;
-	width: 100%;
 }
 
 .project-preview {
@@ -397,7 +397,7 @@ html, body {
 }
 
 .text {
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -470,7 +470,7 @@ html, body {
 	}
 
 	.text {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.project-description {

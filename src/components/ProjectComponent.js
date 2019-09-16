@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class ProjectComponent extends React.Component {
 
@@ -8,6 +7,7 @@ export default class ProjectComponent extends React.Component {
 	}
 
 	render() {
+		
 		return (
 			<div className="project-square">
 				<a href={this.props.link} target="_blank"><div className="project-hover">
