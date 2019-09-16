@@ -42,7 +42,7 @@ export default class ProjectBoardComponent extends React.Component {
 													projectname = "CharityChain"
 													image = "charitychain.png"
 													description = "Using blockchain to keep donors informed and charities honest."
-													tools = "Blockchain, React, Firebase"
+													tools = "Solidity, React, Firebase"
 													link = "https://github.com/xcjackpan/Charity-Chain"/>
 							<ProjectComponent className = "square"
 													projectname = "Claire"
